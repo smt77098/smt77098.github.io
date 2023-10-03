@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkred;
+    padding: .5em; }
+
+main {
+    background-color: rgb(246, 246, 246);
+    padding: 1em; }
+
+h1 {
+    color:black }
+
+img {
+    width: 70px;
+    height: auto;
+    padding: 5px; }
+
+.card1 { 
+    background-color: rgb(255, 173, 173);
+    padding: 5px; padding-left: 15px; padding-right: 15px;
+    border-radius: 8px;
+    display: flex;
+    font-size: 18px; }
+
+.card2 { 
+    background-color: rgb(173, 228, 255);
+    padding: 5px; padding-left: 15px; padding-right: 15px;
+    border-radius: 8px;
+    display: flex;
+    font-size: 18px; }
+
+.card3 { 
+    background-color: rgb(173, 255, 182);
+    padding: 5px; padding-left: 15px; padding-right: 15px;
+    border-radius: 8px;
+    display: flex;
+    font-size: 18px; }
+
+#navbar {
+        min-height: 45px;
+        background-color: red;
+        width: 100%; }
+
+#navbar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly; }
+
+#navbar li {
+        padding-top: 10px; }
+
+/*links*/
+#navbar li a {
+        color: white;
+        font-weight: 800;
+        text-decoration: none; }
+
+#navbar li a:hover {
+        color: #ba9c9c;
+        text-decoration: underline; }
+
+#home nav li:nth-child(1) a,
+#texas-holdem nav li:nth-child(2) a,
+#poker-variants nav li:nth-child(3) a {
+        color: red;
+        padding: 0.2em;
+        border-radius: 4px;
+        text-decoration: none;
+        background-color: white }
+        
+#flex {
+        display: flex; }
+
+    
