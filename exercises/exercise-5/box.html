@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Example</title>
+    <style>
+      #box {
+        background-color: red;
+        width: 900px;
+        height: 200px;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 900px) {
+        #box {
+          width: 100%;
+          background-color: goldenrod;
+        }
+      }
+      @media (max-width: 700px) {
+        #box {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Example</title>
+    <style>
+      :root {
+        --header-width: 250px;
+        --base-gray: #d9d9d9;
+        --bg-color: #4e6876;
+        --padding-small: 1em;
+        --padding-medium: 1em;
+        --margin-medium: 1em;
+        --margin-medium: 2em;
+        --gap: 1em;
+      }
+      /* * = Applies to everything. Don't count border as part of width */
+      * {
+        box-sizing: border-box;
+      }
+      /* Draw border so we can see elements */
+      figure,
+      div {
+        border: 1px solid gray;
+      }
+      body {
+        background-color: var(--bg-color);
+        margin: 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      /* Header */
+      header {
+        padding: var(--padding-small);
+        background-color: var(--base-gray);
+        #logo {
+          width: var(--header-width);
+          h1 {
+            margin: 0;
+          }
+        }
+      }
+      header nav {
+        text-align: right;
+        width: calc(100% - var(--header-width));
+      }
+      nav ul {
+        margin: 0;
+      }
+      nav li {
+        list-style-type: none;
+        display: inline;
+      }
+      nav a {
+        padding: var(--padding-medium);
+      }
+      main {
+        max-width: 1200px;
+        margin: 1em auto;
+        min-height: 400px;
+        background-color: #fff;
+        padding: var(--gap);
+
+        .row {
+          margin: var(--margin-medium);
+        }
+      }
+      /* Intro */
+      #hero-image {
+        width: 45%;
+      }
+      #intro {
+        width: 55%;
+      }
+      /* Figure */
+      figure.card {
+        margin: 0;
+      }
+      /* Utilities */
+      .row {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 1100px;
+        gap: var(--gap);
+        justify-content: space;
+      }
+
+      @media (max-width: 720px) {
+        body {
+          background-color: red;
+        }
+
+        .row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="row">
+        <div id="logo"><h1>Learning Poker</h1></div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Texas Hold'em</a></li>
+            <li><a href="#">Popular Poker Variants</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- INTRO -->
+      <div class="row">
+        <div id="hero-image">
+          <img src="https://placehold.co/600x400" alt="" />
+        </div>
+        <div id="intro">
+          <h2>Welcome to the World of Poker</h2>
+          <p>
+            Poker is a timeless card game that has captivated players for
+            generations. Whether you're a beginner looking to learn the basics
+            or a seasoned player seeking to refine your skills, this microsite
+            is your comprehensive guide to the world of poker. Join us on a
+            journey into the exciting realm of bluffs, bets, and strategic
+            gameplay.
+          </p>
+        </div>
+      </div>
+      <!-- CARDS -->
+      <div class="row cardholder">
+        <figure class="card">
+          <a href="#"><img src="https://placehold.co/600x400" alt="" /></a>
+          <figcaption><a href="#">Caption</a></figcaption>
+        </figure>
+        <figure class="card">
+          <a href="#"><img src="https://placehold.co/600x400" alt="" /></a>
+          <figcaption><a href="#">Caption</a></figcaption>
+        </figure>
+        <figure class="card">
+          <a href="#"><img src="https://placehold.co/600x400" alt="" /></a>
+          <figcaption><a href="#">Caption</a></figcaption>
+        </figure>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Poker</title>
+    <style>
+      :root {
+        --header-width: 250px;
+        --bg-color: #764e4e;
+        --padding-small: 1em;
+        --padding-medium: 1em;
+        --margin-medium: 1em;
+        --margin-medium: 2em;
+        --gap: 1em;
+      }
+      /* * = Applies to everything. Don't count border as part of width */
+      * {
+        box-sizing: border-box;
+      }
+      /* Draw border so we can see elements */
+      figure,
+      div {
+        border: 1px solid gray;}
+      body {
+        background-color: var(--bg-color);
+        margin: 0; }
+      img {
+        max-width: 100%;
+        height: auto;}
+    
+      /* Header */
+      header {
+        padding: var(--padding-small);
+        background-color: var(--base-gray);
+        #logo 
+        {   width: var(--header-width);
+          h1 {margin: 0;}   }  
+     }
+
+      header nav {
+        text-align: right;
+        width: calc(100% - var(--header-width)); }
+      nav ul {
+        margin: 0; }
+      nav li {
+        list-style-type: none;
+        display: inline; }
+      nav a {
+        padding: var(--padding-medium); }
+
+      main {
+        max-width: 1200px;
+        margin: 1em auto;
+        min-height: 400px;
+        background-color: #fff;
+        padding: var(--gap);
+
+        .row {
+          margin: var(--margin-medium);
+        }
+      }
+      /* Intro */
+      #hero-image {
+        width: 45%;
+      }
+      #intro {
+        width: 55%;
+      }
+      /* Figure */
+      figure.card {
+        margin: 0;
+      }
+      /* Utilities */
+      .row {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 1100px;
+        gap: var(--gap);
+        justify-content: space;
+      }
+
+      /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #2e0202;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #dc0c0c;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+@media (max-width: 720px) {
+            .row {
+                flex-direction: column;
+                display: block;
+                width: fit-content;
+            }
+
+            #logo {
+                text-align: center;
+            }
+
+            #hero-image {
+                width: fit-content;
+            }
+
+            #intro {
+                width: fit-content;
+                padding: 10px;
+            }
+        }
+/* hide all links, except for the first one ("Home") */
+@media screen and (max-width: 720px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/*  "responsive" class topnav with JavaScript  */
+@media screen and (max-width: 720px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="learning-poker.html">Learning Poker</a>
+            <a href="texas-holdem.html">Texas Hold'em</a>
+            <a href="popular-variants.html">Popular Poker Variants</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+    </header>
+
+  
+    <main>
+      <!-- INTRO -->
+      <div class="row">
+        <div id="hero-image">
+          <img src="gambling-4178462_1280.jpg" alt="picture of dice, coins, and gambling cards on a table." />
+        </div>
+        <div id="intro">
+          <h1>Welcome to the World of Poker</h1>
+          <p>
+            Poker is a timeless card game that has captivated players for
+            generations. Whether you're a beginner looking to learn the basics
+            or a seasoned player seeking to refine your skills, this microsite
+            is your comprehensive guide to the world of poker. Join us on a
+            journey into the exciting realm of bluffs, bets, and strategic
+            gameplay.
+          </p>
+        </div>
+      </div>
+      <!-- CARDS -->
+      <div class="row cardholder">
+
+        <figure class="card">
+          <a href="#"><img src="poker.svg" alt="Red Pokerchip" /></a>
+          <figcaption><a href="#">Learning Poker</a></figcaption>
+        </figure>
+
+        <figure class="card">
+          <a href="#"><img src="poker-green.svg" alt="Green Pokerchip" /></a>
+          <figcaption><a href="#">Texas Hold'em</a></figcaption>
+        </figure>
+
+        <figure class="card">
+          <a href="#"><img src="poker-blue.svg" alt="Blue Pokerchip" /></a>
+          <figcaption><a href="#">Poker Variants</a></figcaption>
+        </figure>
+
+      </div>
+
+    <!--SCRIPT-->
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+    </main>
+  </body>
+</html>
