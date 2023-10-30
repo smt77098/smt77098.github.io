@@ -5,7 +5,12 @@ main {
     background-color: #9DDBF6;
     width: 1000px;
     margin: 0 auto; 
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; }
+    font-family:'Loto', 'Calibri', 'Trebuchet MS', sans-serif; 
+ }
+
+ #bar {
+    transition: margin-left .5s;
+    padding: 10px; }
 
 footer {
     background-color: #359A33;
@@ -40,6 +45,7 @@ footer {
     margin: 15px;
     padding: 10px;
     padding-bottom:20px;
+    padding-top:1px;
     border-radius: 10px; }
 /*----------------------------------- */
 /* IMAGE */
@@ -110,6 +116,58 @@ nav a:hover {
     background-color: #F6AA1C; }
 
 /*----------------------------------- */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family:'Loto', 'Calibri', 'Trebuchet MS', sans-serif; 
+
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    right: 25px;
+    padding: 10px;
+    border: none;
+   
+  }
+  
+  .openbtn:hover {
+    background-color: #EC0B43;
+  }
+
+
 /* RESPONSIVE 900 */
   @media screen and (max-width: 900px) {
     main  { width: 100%; } 
@@ -124,5 +182,6 @@ nav a:hover {
         nav li { margin: 0 10px; }
         img { width:100%; height: auto; }
         .materialsimage { max-width: 400px; }
-        
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
         }

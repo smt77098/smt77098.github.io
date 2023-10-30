@@ -6,9 +6,16 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 
-    <title>FROG TUTORIAL | ORIGAMI HUB</title>
+    <title>STEP 2 | FROG TUTORIAL | ORIGAMI HUB</title>
 
 </head>
+<div id="stepsSidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="frog-tutorial.html">Step 1</a>
+    <a href="step2.html">Step 2</a>
+    <a href="step3.html">Step 3</a>
+    <a href="step4.html">Step 4</a>
+  </div>
 <body>
     <main>
         <header class="green-header">
@@ -24,19 +31,17 @@
         </header>
 
         <div class="card">
-
+            <div id="bar">
+                <button class="openbtn" onclick="openNav()">☰ STEP MENU</button>  
+            </div>
             <div class="steps">
                 <h3>Making the front legs</h3>
-                <p>To hop, a frog needs legs! 
+                <p>To hop, a frog needs legs!</p> 
 
-                    Put your fingers in the middle of the triangle fold you just made on the left side.
-                    Pull the bottom of the triangle up till it makes another little triangle, just peeking off the side. 
-                    Repeat with the right side.
+                    <p>Put your fingers in the middle of the triangle fold you just made on the left side. Pull the bottom of the triangle up till it makes another little triangle, just peeking off the side. 
+                    <p>Repeat with the right side.</p>
                     
-                    Once you have completed this step, your frog should have two little front feet. 
-                    
-                    Continue to the next step to proceed with the folding process. </p>
-                    <p>Continue to the next step to unfold and proceed with the folding process.</p>
+                    <p>Once you have completed this step, your frog should have two little front feet. </p>
                     <a id="back" href="frog-tutorial.html"> < BACK </a>
                     <a id="next" href="step3.html">NEXT > </a>
 
@@ -45,5 +50,16 @@
             </div>
             <footer> copyright sam timlin 2023</footer>
     </main>
+    <script>
+        function openNav() {
+          document.getElementById("stepsSidebar").style.width = "250px";
+          document.getElementById("bar").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("stepsSidebar").style.width = "0";
+          document.getElementById("bar").style.marginLeft= "0";
+        }
+</script>
 </body>
 </html>

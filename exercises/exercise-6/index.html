@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sheets/styles.css">
+
+    <title>Exercise 6</title>
+    <script src="scripts.js"></script>
+
+  </head>
+  <body>
+    <button id="toggle-nav">&#9776;</button>
+    <nav id="primary-nav" role="navigation">
+      <div class="inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutpage.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <p>
+        This basic example shows one approach to how a responsive nav can work
+        using CSS an minimal JavaScript. We create a button with an id of
+        'toggle-nav' that's placed absolutely. When clicked, it dynamically adds
+        a class of 'nav-open' to the body tag. When this is in-place, our CSS
+        kicks in to assign our #primary-nav with 'grid-template-rows: 1fr;'
+        (which will scale the height to fit the contents). We also change the
+        character in the button from a hamburger to a close.
+      </p>
+
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, vel.
+        Impedit, hic aut suscipit ullam porro assumenda iure dignissimos odio.
+      </p>
+    </main>
+    <script src="sheets/scripts.js">
+    </script>
+  </body>
+</html>
