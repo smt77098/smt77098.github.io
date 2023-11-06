@@ -1,0 +1,24 @@
+body {
+    color:white;
+    background-image: url('./photos/charade-movie-screencaps.com-149.jpg');
+    background-color:black;
+    
+    background-size: cover;
+}
+
+main {
+    padding: 10px;
+}
+
+h1 {padding-top: 15px;
+    padding-bottom:15px;}
+
+#carouselExample {padding: 10px; width: 650px; height:auto;}
+
+#primary {
+    background-color: black; }
+
+
+.container {background-color: black;
+padding:15px;
+margin:10px;}
