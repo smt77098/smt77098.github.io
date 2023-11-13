@@ -1,0 +1,84 @@
+body {
+    background-image: url('./photos/bluebackground.png');
+    background-color: rgb(27, 17, 61); } 
+
+main {
+  
+    background-color: #86b8af;
+    width: 900px;
+    margin: 0 auto;
+    font-family: Georgia, Times, 'Times New Roman', serif 'Calibri', 'Trebuchet MS', sans-serif; 
+ }
+
+ header, footer {
+    background-color: #030321;
+    color:aliceblue;
+    max-height: 100px;
+    padding: 10px;
+    font-size: 30px;
+ }
+
+ footer {
+    font-size: 10px;
+    text-align: center;
+ }
+
+ /*LINKS------------------------ */
+ .headlink {
+    color:white;
+    text-decoration: none;
+ }
+
+/*IMAGES------------------------ */
+.portrait {
+    max-height: 420px; max-width: 280px;
+}
+
+.float-left { 
+   float:left;
+   margin-right:20px;
+}
+
+.clear { 
+   clear:both;
+}
+.heroimage {
+      max-width:900px; 
+      height:auto; 
+}
+
+/*CONTAINER INFO------------------------ */
+.reviewer {
+    color:blue;
+    font-size: 20px;
+}
+
+.reviewtitle {
+    font-size: 26px;
+}
+
+ /*CONTAINER BOXES------------------------ */
+ .container, .headcontainer {
+    max-width: 800px; height: auto;
+    background-image: url('./photos/sandy.jpg');
+    background-color: aliceblue;
+    color:black;
+    font-size: 22px;
+    margin: 15px auto;
+    padding:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .headcontainer {
+    font-size: 48px; 
+    text-align: center;
+ }
+
+
+/*RESPONSIVE 700----------------- */
+@media screen and (max-width: 700px) { 
+   .float-left {float:none; margin-right:0;}
+   main {max-width: 600;}
+   .container, .headcontainer {
+      max-width: 500px; height: auto; }
+   }
