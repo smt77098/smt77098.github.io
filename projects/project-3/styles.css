@@ -50,7 +50,7 @@ main {
 }
  
  .topnav a:hover {
-   background-color: #ffffff;
+   background-color: aliceblue;
    color: black;
  }
  
@@ -137,6 +137,7 @@ main {
    }
    .headcontainer {
       font-size: 30px; }
+
    .heroimage {
       max-width:100%; 
    }
