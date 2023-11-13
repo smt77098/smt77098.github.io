@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Reviews & Praise | Alice In Wonderland Booksite</title>
 </head>
 <body>
 <main>
 <!--HEADER-->
-<header><a class="headlink" href="index.html">Alice in Wonderland</a></header>
-<!--HEADER END-->
+<header><div class="topnav" id="myTopnav">
+    <a href="index.html" class="headlink">Alice In Wonderland</a>
+    <div class="topnav-right">
+    <a href="read-the-book.html">Read</a>
+    <a href="reviews-and-praise.html">Reviews</a>
+    <a href="about-author.html">About Author</a>
+    <a href="other-works.html">Other Works</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div></header>
+  <!--HEADER END-->
 
 <!--HEADER BOX-->
     <div class="headcontainer">
@@ -40,5 +51,16 @@
 <footer>Alice in Wonderland Booksite</footer>
 <!--FOOTER END-->
 </main>
+<!--SCRIPT-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
 </body>
 </html>

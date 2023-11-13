@@ -13,7 +13,6 @@ main {
  header, footer {
     background-color: #030321;
     color:aliceblue;
-    max-height: 100px;
     padding: 10px;
     font-size: 30px;
  }
@@ -23,11 +22,46 @@ main {
     text-align: center;
  }
 
- /*LINKS------------------------ */
- .headlink {
-    color:white;
-    text-decoration: none;
+/*NAV--------------------------- */
+.topnav {
+   overflow: hidden;
  }
+ 
+ /*NAV LINKS-------------- */
+ .topnav a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+
+ .topnav-right {
+   float: right;
+ }
+
+
+ .topnav a.headlink, .topnav a.headlink:hover {
+   font-size: 20px;
+   color:aliceblue;
+   background-color: #030321;
+}
+ 
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ 
+ .topnav a.active {
+   text-decoration: underline;
+ }
+ 
+ .topnav .icon {
+   display: none;
+ }
+
 
 /*IMAGES------------------------ */
 .portrait {
@@ -42,9 +76,10 @@ main {
 .clear { 
    clear:both;
 }
+
 .heroimage {
-      max-width:900px; 
-      height:auto; 
+   max-width:1000px; 
+   height:auto; 
 }
 
 /*CONTAINER INFO------------------------ */
@@ -54,18 +89,35 @@ main {
 }
 
 .reviewtitle {
-    font-size: 26px;
+    font-size: 28px;
 }
+/*OTHER BOOKS---------------- */
+.row {
+   display: flex;
+   flex-direction: row;
+   margin: 0 auto;
+   max-width: 1100px;
+   gap: var(--gap);
+   justify-content: space;
+ }
 
- /*CONTAINER BOXES------------------------ */
- .container, .headcontainer {
+ .bookcover {height: 300px; 
+ }
+ #book-image {
+   width: 30%;
+ }
+ #descriptor {
+   width: 55%;
+ }
+
+/*CONTAINER BOXES------------------------ */
+ .container, .headcontainer, .row {
     max-width: 800px; height: auto;
-    background-image: url('./photos/sandy.jpg');
     background-color: aliceblue;
     color:black;
-    font-size: 22px;
+    font-size: 20px;
     margin: 15px auto;
-    padding:10px;
+    padding:15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
 
@@ -78,7 +130,49 @@ main {
 /*RESPONSIVE 700----------------- */
 @media screen and (max-width: 700px) { 
    .float-left {float:none; margin-right:0;}
-   main {max-width: 600;}
+   main  { width: 100%; } 
+
    .container, .headcontainer {
-      max-width: 500px; height: auto; }
+      max-width: 600px; height: auto; }
    }
+   .heroimage {
+      max-width:100%; 
+   }
+
+/*RESPONSIVE NAV----------------- */
+@media screen and (max-width: 700px) {
+   .topnav a:not(:first-child) {display: none;}
+   .topnav a.icon {
+     float: right;
+     display: block;
+   }
+   .topnav.responsive {position: relative;}
+   .topnav.responsive a.icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+   }
+   .topnav.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+ }
+
+ /* RESPONSE FOR BOOKS----------- */
+ @media (max-width: 720px) {
+   .row {
+       flex-direction: column;
+       display: block;
+       width: fit-content;
+   }
+
+   #book-image {
+       width: fit-content;
+   }
+
+   #descriptor {
+       width: fit-content;
+       padding: 10px;
+   }
+}
