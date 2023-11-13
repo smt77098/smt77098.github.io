@@ -135,6 +135,8 @@ main {
    .container, .headcontainer {
       max-width: 600px; height: auto; }
    }
+   .headcontainer {
+      font-size: 30px; }
    .heroimage {
       max-width:100%; 
    }
