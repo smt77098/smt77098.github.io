@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 body {
     background-image: url('./photos/bluebackground.png');
     background-color: rgb(27, 17, 61); } 
@@ -22,26 +24,36 @@ main {
     text-align: center;
  }
 
+ h1 { 
+   font-size: 45px;
+ }
+
 /*NAV--------------------------- */
 .topnav {
-   overflow: hidden;
+   overflow: hidden; text-align: right;
  }
- 
+ /*------*/
+ .navigation { display: table; width:100% }
+.alice, .c {  display: table-cell; }
+
+.c { text-align: right;}
  /*NAV LINKS-------------- */
  .topnav a {
-   float: left;
-   display: block;
+
    color: #f2f2f2;
-   text-align: center;
-   padding: 14px 16px;
+   text-align: right;
+   padding: 14px 14px;
    text-decoration: none;
    font-size: 17px;
  }
 
- .topnav-right {
-   float: right;
- }
+.alice  {
+   color:aliceblue;
+   text-decoration: none;
+   text-align: center;
+   font-family: 'Dancing Script', cursive;
 
+}
 
  .topnav a.headlink, .topnav a.headlink:hover {
    font-size: 20px;
@@ -67,6 +79,19 @@ main {
 .portrait {
     max-height: 420px; max-width: 280px;
 }
+
+   
+   .image {
+   position: relative;
+   }
+   
+   .image figcaption{
+   position: absolute;
+   top: 25%;
+   bottom: 50%;
+   right: 50%;
+   font-size: 40px;
+   }
 
 .float-left { 
    float:left;
@@ -127,24 +152,24 @@ main {
  }
 
 
-/*RESPONSIVE 700----------------- */
-@media screen and (max-width: 700px) { 
+/*RESPONSIVE 760----------------- */
+@media screen and (max-width: 760px) { 
    .float-left {float:none; margin-right:0;}
    main  { width: 100%; } 
 
    .container, .headcontainer {
       max-width: 600px; height: auto; }
    }
-   .headcontainer {
-      font-size: 30px; }
+ 
+
 
    .heroimage {
       max-width:100%; 
    }
 
 /*RESPONSIVE NAV----------------- */
-@media screen and (max-width: 700px) {
-   .topnav a:not(:first-child) {display: none;}
+@media screen and (max-width: 760px) {
+   .topnav a {display: none;}
    .topnav a.icon {
      float: right;
      display: block;
