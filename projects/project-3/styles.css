@@ -15,7 +15,7 @@ main {
  header, footer {
     background-color: #030321;
     color:aliceblue;
-    padding: 10px;
+    padding: 15px;
     font-size: 30px;
  }
 
@@ -42,7 +42,7 @@ main {
 
    color: #f2f2f2;
    text-align: right;
-   padding: 14px 14px;
+   padding: 10px  10px;
    text-decoration: none;
    font-size: 17px;
  }
@@ -50,10 +50,14 @@ main {
 .alice  {
    color:aliceblue;
    text-decoration: none;
-   text-align: center;
+   text-align: left;
+   position: absolute;
    font-family: 'Dancing Script', cursive;
-
+   
 }
+.navigation a:hover {color: rgb(0, 255, 128);}
+
+
 
  .topnav a.headlink, .topnav a.headlink:hover {
    font-size: 20px;
@@ -83,22 +87,18 @@ main {
 .bunny { max-height: 200px; width: auto; position: relative; bottom: 50%;
   }
 
-.bunnyhover { max-height: 200px; width: auto; position: relative; top: 80%; left:50%; z-index: 10;}
+.bunnyhover { max-height: 200px; width: auto; position: relative; top: 80%; left:45%;  }
       
-
+.middle { text-align: center;}
    .image {
    position: relative;
    }
    
-   .top-left {
-      color: black;
-      position: relative;
-      top: 35%;   
-  font-size: 30px; }
-  
+
+   
   .top-left2 {
       position: relative;
-      color:rgb(6, 41, 41)0, 255, 21);
+      color:rgb(6, 41, 41);
       top: 45%;
       font-size: 40px; }
 
@@ -146,7 +146,7 @@ main {
  .bookcover {height: 300px; 
  }
  #book-image {
-   width: 30%;
+   width: 38%; 
  }
  #descriptor {
    width: 55%;
@@ -169,6 +169,22 @@ main {
  }
 
 
+ /*RESPONSIVE 900----------------- */
+@media screen and (max-width: 900px) { 
+   .float-left {float:none; margin-right:0;}
+   main  { width: 100%; } 
+
+   .container, .headcontainer {
+      max-width: 700px; height: auto; }
+   }
+ 
+
+
+   .heroimage {
+      max-width:100%; 
+   }
+
+
 /*RESPONSIVE 760----------------- */
 @media screen and (max-width: 760px) { 
    .float-left {float:none; margin-right:0;}
@@ -187,7 +203,7 @@ main {
 
 
 /*RESPONSIVE NAV----------------- */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
    .topnav a {display: none;}
    .topnav a.icon {
      float: right;
@@ -223,3 +239,15 @@ main {
        padding: 10px;
    }
 }
+
+/* RESPONSE FOR INDEX */
+@media screen and (max-width: 500px) {
+ 
+   .top-left2 {
+
+      top: 30%;
+   }
+   }
+
+   .bookcover {text-align: center; 
+   }
