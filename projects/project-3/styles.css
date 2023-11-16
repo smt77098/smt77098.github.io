@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
 
 body {
     background-image: url('./photos/bluebackground.png');
-    background-color: rgb(27, 17, 61); } 
+    background-color: rgb(27, 17, 61);   }
 
 main {
   
     background-color: #86b8af;
     width: 900px;
     margin: 0 auto;
-    font-family: Georgia, Times, 'Times New Roman', serif 'Calibri', 'Trebuchet MS', sans-serif; 
+    font-family:  'Cormorant Garamond', Georgia, Times, 'Times New Roman', serif 'Calibri', 'Trebuchet MS', sans-serif; 
  }
 
  header, footer {
@@ -19,7 +20,7 @@ main {
     
  }
 
- header { font-size: 30px;}
+ header { font-size: 30px; }
 
 
  footer {
@@ -31,17 +32,24 @@ main {
    font-size: 45px; text-align: center;
  }
 
+
 /*NAV--------------------------- */
 .topnav {
    overflow: hidden; text-align: right; 
  }
  /*------*/
 
- .navigation { display: table; width:100%; }
+ .navigation { display: table; width:100%; height: 30px; }
 .logo, .c {  display: table-cell; }
 .c { text-align: right;}
 
  /*NAV LINKS-------------- */
+ nav {
+ justify-content: space-around;
+
+  align-items: center;
+
+  min-height: 8vh; } 
  .topnav a {
 
    color: #f2f2f2;
@@ -49,9 +57,10 @@ main {
    padding: 10px  10px;
    text-decoration: none;
    font-size: 17px;
+   
  }
 
- ul {
+ ul { 
    list-style: none;
    display: flex;
    justify-content: right; }
@@ -62,16 +71,19 @@ main {
 .logo  {
    color:aliceblue;
    text-decoration: none;
+   padding-left: 20px;
    text-align: left;
    position: absolute;
    font-family: 'Dancing Script', cursive;
    
+   
 }
-.navigation a:hover {color: rgb(0, 255, 128);}
+.navigation a:hover {color: rgb(0, 255, 128);  }
 
 
 
  .topnav a.headlink, .topnav a.headlink:hover {
+
    font-size: 20px;
    color:aliceblue;
    background-color: #030321;
@@ -219,7 +231,7 @@ main {
    .topnav a {display: none;}
    .topnav a.icon { 
       position: absolute; 
-      right: 20px; top: 20px;
+      right: 28px; top: 23px;
      float: right;
      display: block;
    }
