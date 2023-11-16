@@ -15,7 +15,7 @@ main {
  header, footer {
     background-color: #030321;
     color:aliceblue;
-    padding: 15px;
+    padding-top: 15px; padding-bottom:15px; padding-left: 20px; padding-right: 20px;
     font-size: 30px;
  }
 
@@ -30,13 +30,14 @@ main {
 
 /*NAV--------------------------- */
 .topnav {
-   overflow: hidden; text-align: right;
+   overflow: hidden; text-align: right; 
  }
  /*------*/
- .navigation { display: table; width:100% }
-.alice, .c {  display: table-cell; }
 
+ .navigation { display: table; width:100% }
+.logo, .c {  display: table-cell; }
 .c { text-align: right;}
+
  /*NAV LINKS-------------- */
  .topnav a {
 
@@ -47,7 +48,15 @@ main {
    font-size: 17px;
  }
 
-.alice  {
+ ul {
+   list-style: none;
+   display: flex;
+   justify-content: right; }
+
+
+
+
+.logo  {
    color:aliceblue;
    text-decoration: none;
    text-align: left;
@@ -80,6 +89,8 @@ main {
 
 
 /*IMAGES------------------------ */
+.break {font-size:45px; text-align: center;}
+
 .portrait {
     max-height: 420px; max-width: 280px;
 }
@@ -93,9 +104,7 @@ main {
    .image {
    position: relative;
    }
-   
 
-   
   .top-left2 {
       position: relative;
       color:rgb(6, 41, 41);
@@ -205,7 +214,9 @@ main {
 /*RESPONSIVE NAV----------------- */
 @media screen and (max-width: 800px) {
    .topnav a {display: none;}
-   .topnav a.icon {
+   .topnav a.icon { 
+      position: absolute; 
+      right: 20px; top: 20px;
      float: right;
      display: block;
    }
@@ -220,7 +231,9 @@ main {
      display: block;
      text-align: left;
    }
+   ul {   display:block;}
  }
+
 
  /* RESPONSE FOR BOOKS----------- */
  @media (max-width: 720px) {
