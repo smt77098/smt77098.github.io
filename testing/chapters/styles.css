@@ -1,0 +1,49 @@
+/*SIDEBAR*/
+/*----------------------------------- */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: aliceblue;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #030321;
+    background-color: aliceblue;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+    margin-left: 45px;
+  }
+  
+  .openbtn {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #030321;
+    color:aliceblue;
+    padding: 10px; margin-bottom:15px;
+  
+   
+  }
+  
+  .openbtn:hover {
+    background-color: #86b8af; color: #030321; }

@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
+ p {  padding: 5px;}
 
 body {
     background-image: url('./photos/bluebackground.png');
+    background-position: center;
     background-color: rgb(27, 17, 61);   }
 
 main {
@@ -23,7 +25,6 @@ main {
  header, footer {
     background-color: #030321;
     color:aliceblue;
-
     
  }
  header {
@@ -34,12 +35,14 @@ main {
  footer {
     font-size: 15px;
     text-align: center;
+    padding: 10px;
  }
 
  h1 { 
-   font-size: 45px; text-align: center;
+   font-size: 45px; text-align: center; padding: 5px; font-family: 'Courgette', cursive;
  }
 
+ .poem { text-align: center;}
 
 /*NAV--------------------------- */
 
@@ -54,14 +57,14 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 15px 15px;
 }
 
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Cormorant Garamond' Georgia, 'Times New Roman', Times, serif;
 }
 
 .nav-item a {
@@ -75,14 +78,17 @@ button {
 
 }
 
-.nav-logo {
+.active { text-decoration: underline;}
+
+.logo {
     font-size: 30px;
     color: aliceblue;
     font-family: 'Dancing Script', sans-serif;
-    text-decoration: none;  
+    text-decoration: none; 
+    margin-left: 40px; 
 }
 
-.nav-logo:hover { color: rgb(0, 255, 128);}
+.logo:hover { color: rgb(0, 255, 128);}
  /* MENU ------*/
  .hamburger {
    display: none;
@@ -94,8 +100,8 @@ button {
    height: 3px;
    margin: 5px auto;
    background-color: aliceblue;
-}
 
+}
 
 /*IMAGES------------------------ */
 .break {font-size:45px; text-align: center;}
@@ -131,7 +137,6 @@ button {
 
 .heroimage {
    background-image: url("photos/heroimage-alice.png");
-   background-color: red;
    background-position: center;
    background-repeat: no-repeat; 
    background-size: cover; 
@@ -196,12 +201,9 @@ button {
       max-width: 700px; height: auto; }
    }
  
-
-
    .heroimage {
       max-width:100%; 
    }
-
 
 /*RESPONSIVE 760----------------- */
 @media screen and (max-width: 760px) { 
@@ -224,13 +226,14 @@ button {
 
 @media only screen and (max-width: 768px) {
    .nav-menu {
-       position: fixed;
+       position: absolute;
        left: 100%;
        top: 80px;
        flex-direction: column;
        background-color: #030321;
        width: 100%;
        text-align: center;
+
 
    }
 
