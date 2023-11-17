@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { background-color: aquamarine;}
+
+header {
+    background-color: #030321;
+    color:aliceblue;
+   height: 80px;
+}
+
+li { list-style: none; }
+
+button { 
+    padding: 5px; 
+    background-color: #030321; 
+    border: none; }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-item a {
+    margin-left: 15px;  color: aliceblue; padding: 3px;  text-decoration: none;  
+
+}
+
+.nav-item a:hover{
+    color:#030321;
+    background-color: aliceblue;
+
+}
+
+.nav-logo {
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'Dancing Script', sans-serif;
+    text-decoration: none;  
+}
+
+.nav-logo:hover { color: rgb(0, 255, 128);}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: #030321;
+        width: 100%;
+        text-align: center;
+ 
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer; 
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

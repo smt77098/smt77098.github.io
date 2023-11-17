@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
 
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
 body {
     background-image: url('./photos/bluebackground.png');
     background-color: rgb(27, 17, 61);   }
@@ -16,11 +23,12 @@ main {
  header, footer {
     background-color: #030321;
     color:aliceblue;
-    padding-top: 15px; padding-bottom:15px; padding-left: 20px; padding-right: 20px;
+
     
  }
-
- header { font-size: 30px; }
+ header {
+  height: 80px;
+}
 
 
  footer {
@@ -34,73 +42,59 @@ main {
 
 
 /*NAV--------------------------- */
-.topnav {
-   overflow: hidden; text-align: right; 
- }
- /*------*/
 
- .navigation { display: table; width:100%; height: 30px; }
-.logo, .c {  display: table-cell; }
-.c { text-align: right;}
+li { list-style: none; }
 
- /*NAV LINKS-------------- */
- nav {
- justify-content: space-around;
+button { 
+    padding: 5px; 
+    background-color: #030321; 
+    border: none; }
 
-  align-items: center;
-
-  min-height: 8vh; } 
- .topnav a {
-
-   color: #f2f2f2;
-   text-align: right;
-   padding: 10px  10px;
-   text-decoration: none;
-   font-size: 17px;
-   
- }
-
- ul { 
-   list-style: none;
-   display: flex;
-   justify-content: right; }
-
-
-
-
-.logo  {
-   color:aliceblue;
-   text-decoration: none;
-   padding-left: 20px;
-   text-align: left;
-   position: absolute;
-   font-family: 'Dancing Script', cursive;
-   
-   
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
-.navigation a:hover {color: rgb(0, 255, 128);  }
 
-
-
- .topnav a.headlink, .topnav a.headlink:hover {
-
-   font-size: 20px;
-   color:aliceblue;
-   background-color: #030321;
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
- 
- .topnav a:hover {
-   background-color: aliceblue;
-   color: black;
- }
- 
- .topnav a.active {
-   text-decoration: underline;
- }
- 
- .topnav .icon {
+
+.nav-item a {
+    margin-left: 15px;  color: aliceblue; padding: 3px;  text-decoration: none;  
+
+}
+
+.nav-item a:hover{
+    color:#030321;
+    background-color: aliceblue;
+
+}
+
+.nav-logo {
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'Dancing Script', sans-serif;
+    text-decoration: none;  
+}
+
+.nav-logo:hover { color: rgb(0, 255, 128);}
+ /* MENU ------*/
+ .hamburger {
    display: none;
- }
+}
+
+.bar {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px auto;
+   background-color: aliceblue;
+}
 
 
 /*IMAGES------------------------ */
@@ -227,27 +221,46 @@ main {
 
 
 /*RESPONSIVE NAV----------------- */
-@media screen and (max-width: 800px) {
-   .topnav a {display: none;}
-   .topnav a.icon { 
-      position: absolute; 
-      right: 28px; top: 23px;
-     float: right;
-     display: block;
+
+@media only screen and (max-width: 768px) {
+   .nav-menu {
+       position: fixed;
+       left: 100%;
+       top: 80px;
+       flex-direction: column;
+       background-color: #030321;
+       width: 100%;
+       text-align: center;
+
    }
-   .topnav.responsive {position: relative;}
-   .topnav.responsive a.icon {
-     position: absolute;
-     right: 0;
-     top: 0;
+
+   .nav-menu.active {
+       left: 0;
    }
-   .topnav.responsive a {
-     float: none;
-     display: block;
-     text-align: left;
+
+   .nav-item {
+       margin: 10px 0;
    }
-   ul {   display:block;}
- }
+
+   .hamburger {
+       display: block;
+       cursor: pointer; 
+   }
+
+   .hamburger.active .bar:nth-child(2) {
+       opacity: 0;
+   }
+
+   .hamburger.active .bar:nth-child(1) {
+       -webkit-transform: translateY(8px) rotate(45deg);
+       transform: translateY(8px) rotate(45deg);
+   }
+
+   .hamburger.active .bar:nth-child(3) {
+       -webkit-transform: translateY(-8px) rotate(-45deg);
+       transform: translateY(-8px) rotate(-45deg);
+   }
+}
 
 
  /* RESPONSE FOR BOOKS----------- */

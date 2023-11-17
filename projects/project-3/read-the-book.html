@@ -17,22 +17,22 @@
 <body>
 <main>
 <!--HEADER-->
-<header>  
-  <div class="navigation">
-    <a href="index.html" class="logo">Alice In Wonderland</a>
-  <nav class="topnav c"  id="myTopnav">
-<ul>
-  <li><a href="read-the-book.html">Read the Book</a>  </li>
-  <li><a href="reviews-and-praise.html">Reviews &amp; Praise</a></li>
-  <li><a href="about-author.html">About Author</a>  </li>
-  <li><a href="other-works.html">Other Works</a>  </li>
-</ul>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</nav>
-</div></header>
-
+<header class="header">
+  <nav class="navbar">
+          <a href="index.html" class="nav-logo">Alice in Wonderland</a>
+          <ul class="nav-menu">
+              <li class="nav-item"> <a href="read-the-book.html">Read the Book</a>  </li>
+              <li class="nav-item"> <a href="reviews-and-praise.html">Reviews &amp; Praise</a> </li>
+              <li class="nav-item"> <a href="about-author.html">About Author</a> </li>
+              <li class="nav-item"> <a href="other-works.html">Other Works</a> </li> 
+          </ul>
+      <button class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </button>
+  </nav>
+  </header>
 <!--HEADER END-->
 
 <!--CONTENT-->
@@ -72,16 +72,7 @@
 <footer>	&copy; 20XX Alice in Wonderland Booksite</footer>
 <!--FOOTER END-->
 </main>
-<!--SCRIPT-->
-<script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-</script>
+<script src="script.js"></script>
+
 </body>
 </html>
