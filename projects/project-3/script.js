@@ -14,13 +14,3 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-
-function openNav() {
-    document.getElementById("stepsSidebar").style.width = "250px";
-    document.getElementById("bar").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("stepsSidebar").style.width = "0";
-    document.getElementById("bar").style.marginLeft= "0";
-  }
