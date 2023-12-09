@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Brews &amp; Bonds</title>
+</head>
+<body>
+<main class="container">
+  <header class="equal-columns">
+    <div id="logo"><a class="brewsbonds" href="index.html">Brews &amp; Bonds</a></div>
+    <nav class="topnav" id="myTopnav">
+    <ul>
+      <!--DROPDOWN -->
+      <li class="dropdown"> <button class="dropbtn">Menu <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="drink-menu.html">Drinks</a>
+          <a href="food-menu.html">Treats</a>
+        </div>
+      </li>
+      <!--DROPDOWN END -->
+      <li><a href="events.html">Events</a></li>
+      <li><a href="visit-us.html">Visit Us</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+
+    <!--HAMBURGER -->
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <!--HAMBURGER END -->
+    </ul>
+    </nav>     
+  </header>
+
+  <!-- HERO -->
+  <div id="hero">
+    <div id="hero-message">
+    <h1>WELCOME!</h1>
+      <p>We are a cozy space where both coffee and community can meet: the perfect place for you and your friends to bond and hang </p>
+      <p>Come &amp; Visit Us for a 
+        memorable coffee experience.</p>
+    </div>
+    <img class="heroimage" src="photos/brewsandbonds.jpg" alt="Brews and Bonds" >
+  </div>
+
+  <!-- TODAY'S EVENTS -->
+  <div id="todays-events">
+    <h2>TODAYS EVENTS:</h2>
+    <div class="equal-columns">
+<img src="photos/monday-yoga.jpg" alt="People doing yoga on monday" />
+    <div>
+      <div id="day0">Sunday
+        <h3>Book Club</h3> <p>Starts at 3PM, Ends at 4:30PM</p>
+        <h3>Brunch</h3> <p>Starts at 10AM, Ends at 2PM</p>
+      </div>
+      <div id="day1">Monday
+        <h3>Morning Yoga Class</h3> <p>Starts at 9AM, Ends at 10AM</p>
+        <h3>Live Acoustic Music</h3> <p>Starts at 9AM, Ends at 10AM</p>
+      </div>
+      <div id="day2">Tuesday
+        <h3>Coffee Tasting</h3> <p>Starts at 6PM, Ends at 7:30PM</p>
+        <h3>Open Mic Night</h3> <p>Starts at 8PM, Ends at 10PM</p>
+      </div>
+      <div id="day3">Wednesday
+        <h3>Art Exhibition</h3> <p>All Day</p>
+        <h3>Trivia Night</h3> <p>Starts at 7PM, Ends at 9PM</p>
+      </div>
+      <div id="day4">Thursday
+        <h3>Cooking Class</h3> <p>Starts at 5PM, Ends at 7PM</p>
+        <h3>Board Game</h3> <p>Starts at 6PM, Ends at 9PM</p>
+      </div>
+      <div id="day5">Friday
+        <h3>Live Jazz Band</h3> <p>Starts at 7:30PM, Ends at 9:30PM</p>
+      </div>
+      <div id="day6">Saturday
+        <h3>Family Day</h3> <p>Starts at 10AM, Ends at 12PM</p>
+        <h3>Poetry Slam</h3> <p>Starts at 7PM, Ends at 9PM</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+      <div class="card-holder equal-columns">
+        <div class="card">
+          <img class="cardpicture" src="photos/iced-coffee.jpg" alt="picture of iced coffee" style="width:100%">
+          <div class="cardcontainer">
+            <h4><b>Menus</b></h4> 
+            <p>We have both drinks and food here! Go ahead and take a look at what we have to offer.</p> 
+            <a class="greenbutton" href="drink-menu.html"> View Drinks </a> 
+            <a class="greenbutton" href="food-menu.html"> View Food </a> 
+          </div>
+        </div>
+        <div class="card">
+          <img class="cardpicture" src="photos/monday-acoustic.jpg" alt="girl with guitar at event" style="width:100%">
+          <div class="cardcontainer">
+            <h4><b>Events</b></h4> 
+            <p>We offer a variety of events for you to get in on the fun & bond with others! </p> 
+            <a class="greenbutton" href="visit-us.html"> Visit Us </a> 
+          </div>
+        </div>
+        <div class="card">
+          <img class="cardpicture" src="photos/emily-jacob-2.jpg" alt="emily and jacob sitting together" style="width:100%">
+          <div class="cardcontainer">
+            <h4><b>Our Story</b></h4> 
+            <p>Learn the story about how we came to be</p>
+            <a class="greenbutton" href="our-story.html"> Learn More </a> 
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
