@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto:wght@400;500;700;900&display=swap');
 
 
@@ -7,7 +8,6 @@
   --thick-border: 10px solid #62A664;
   --font-family: 'Roboto', sans-serif;
 }
-
 body {
   margin: 0;
   background-color: var(--main-bg-color);
@@ -20,36 +20,30 @@ body {
   min-height: 500px;
 }
 
-.container2 { 
-  font-size: 20px; 
-  max-width:705px; 
-  padding: var(--base-padding); 
-  margin: 0 auto;
-}
+.container2 { font-size: 20px; max-width:705px; padding: var(--base-padding); margin: 0 auto;}
 
 /* MENUS */
-.foodvar {
-  background-color:#CCDCCD; 
-  padding:20px;}
+.foodvar {background-color: #CCDCCD; padding:20px;}
 
+.dl var {background-color: #CCDCCD;}
 .dl-example {
-  background-color:#CCDCCD;
+  
   width: 300px;
 }
 .dl-example dl {
   display: flex;
   flex-wrap: wrap;
 }
-
 .dl-example dt {
+
   width: 50%;
 }
-
 .dl-example dd {
   margin: 0; /* eliminates native left margin */
   width: 50%;
   text-align: right;
 }
+
 /* MENUSEND */
 /* SPECIALS */
 .row {
@@ -59,22 +53,16 @@ body {
   max-width: 500px;
   justify-content: space;
 }
-.special-image { 
-  max-width: 150px; 
-  border-radius: 50%;}
-
+.special-image {max-width: 150px; border-radius: 50%;}
 .special {
   width: 30%; 
 }
-
 .descriptor {
   width: 70%;
 }
 /* */
 
-div, nav {
-  border: 1px dashed gray; 
-}
+
 
 header {
   background-color: #59994E;
@@ -82,51 +70,47 @@ header {
 }
 /*HOMEPAGE CARDS */
 .card {
-  width: 33%;
+  width: 100%;
 }
 
 .cardcontainer {
   padding: 2px 20px;
 }
 
-.cardpicture {
-  border-radius: 50%; 
-  max-width: 500px; }
+.cardpicture {border-radius: 50%; max-width: 500px;}
 
 /* HOMEPAGE CARDS END*/
-.middle { 
-  text-align: center;
-}
 
-.image {
+.storyparagraph { font-size:20px;}
+.middle { text-align: center;}
+   .image {
    position: relative;
-}
+   }
 
-.float-left, .float-right { 
+.float-left { 
    float:left;
    margin-right:20px;
+}
+
+.float-right { 
+  float:right;
+  margin-left:20px;
 }
 
 .clear { 
    clear:both;
 }
 
-.break { 
-  font-size:45px; 
-  text-align: center;
-}
+.break {font-size:45px; text-align: center;}
 
 .portrait {
     max-height: 400px; max-width: 350px;
 }
 
+
 /* PAGE HEAD BAR */
-.pageheading {
-  background-color:#8E6141; 
-  opacity: 75%; 
-  max-height: 95px; 
-  max-width: 900px; 
-  text-align: center; }
+
+.pageheading {background-color:#8E6141; opacity: 75%; max-height: 95px; max-width: 900px; text-align: center; }
 
 /* NAV */
 .topnav {
@@ -172,6 +156,7 @@ font-size: 20px;}
   padding:10px;
   text-decoration: none;
   margin:5px; font-size:2vw;
+  display:block; text-align: center;
 }
 a:hover.greenbutton {
   background-color:#6A4D38}
@@ -179,12 +164,9 @@ a:hover.greenbutton {
 /*BUTTONS END*/
 
 /* copied code */
-/* Add a black background color to the top navigation */
-.topnav {
-  overflow: hidden;
-}
 
-/* Style the links inside the navigation bar */
+
+
 .topnav a {
   float: left;
   display: block;
@@ -200,30 +182,64 @@ a:hover.greenbutton {
   color: white;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 
 
+
+
+.topnav a:hover {
+  background-color: #97D799;
+  color: rgb(0, 0, 0);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive  {float: none;}
+  .topnav.responsive  {position: relative;}
+  .topnav.responsive  {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+
 /* COLLUMN  */
+
+
 .equal-columns {
   display: flex;
   gap: 1em;
   margin-bottom: 1em;
 }
+
+
 .equal-columns:last-child {
   margin-bottom: 0;
 }
@@ -247,6 +263,8 @@ a:hover.greenbutton {
 }
 /* EVENT END */
 /*EVENT PAGE */
+
+.eventcenter {font-size:18px; text-align: center;}
 .eventdetail {
 
   background-color: #eee;
@@ -294,78 +312,22 @@ a:hover.greenbutton {
 #hero-message {
   background-color: #8E6141;
   position: absolute;
-  width: 416px;
+  width: 400px;
   top: 75px;
   left:20px;
+  font-size: 15px;
   color:white;
   opacity: 75%;
   text-align: center;
+  padding:10px;
 }
 
 .heroimage {  display: flex;
+  
   max-width:1000px;}
 
 .eventimage {display: flex; max-width:400px;}
 /* HERO END */
-
-
-/*MEDIA */
-
-/*RESPONSIVE 600----------------- */
-
-@media screen and (max-width: 600px) {
-/*reg stuff */
-.container2, .container { max-width: 300px; height: auto; }
-
-.heroimage {  max-width:100%; height: auto; }
-.equal-columns {display: block; max-width: 100%;}
-
-/* NAV BAR */
-  .topnav a {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block; }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0; top: 0; }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left; width: 100%; }
-
-  }
-
-  /*RESPONSIVE 760----------------- */
-  @media screen and (max-width: 800px) {  
-    main { width: 100%; } 
-  
-    .heroimage {
-      max-width:100%; 
-   }
-   .float-left, .float-right {float:none; margin-right:0;}
-  
-   #hero-message {
-    background-color: #AA8971;
-    position: absolute;
-    width: 100%;
-    top: 100px;
-    left:0px;
-    font-size:12px;
-    color:white;
-    opacity: 100%;
-    text-align: center;
-  }
-    .container {
-       max-width: 600px; height: auto; }
-  
-       .portrait {max-width:100%; }
-    }
-  
-
-
-
-
 
 /*RESPONSIVE 900----------------- */
 @media screen and (max-width: 899px) { 
@@ -382,4 +344,42 @@ a:hover.greenbutton {
  
 
 
+  /*RESPONSIVE 760----------------- */
+@media screen and (max-width: 760px) { 
+  .equal-columns { display: block; max-width: 100%; }
+  .storyparagraph { font-size:3vw;}
+
+ 
+
+
+ #hero { display: flex; width:100%; flex-direction: column-reverse;}
+ #hero-message {
+  position: relative;
+  width: calc(100% - 20px);
+  top: auto;
+  left:auto;
+  opacity: 100%;
+padding: 10px;}
+
+  .container {
+     max-width: 600px; }
+
+     .portrait {max-width:100%; }
+  }
+
+
+/*RESPONSIVE 600----------------- */
+
+@media screen and (max-width: 600px) { 
+
+
+
+  .float-left, .float-right {float:none; margin-right:0;}
+  main  { width: 100%; } 
+  .heroimage {
+    max-width:100%; 
+ }
+
+  .container {
+     max-width: 100%; } }
  

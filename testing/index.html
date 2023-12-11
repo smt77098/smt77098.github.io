@@ -1,73 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #navbar {
-        background-color: #c8c8c8;
-        width: 150px;
-        border: 1px #797979 solid;
-        font-family: Verdana, Helvetica, Arial, sans-serif;
-        }
-        #navbar ul li {
-        list-style-type: none;
-        }
-        #navbar ul li a:link, #navbar ul li a:visited {
-        color: #797979;
-        text-decoration: none;
-        }
-        #navbar ul {
-        padding-left: 3px;
-        margin-left: 0;
-        }
-        #navbar ul li ul {
-        margin-left: 12px;
-        }
-        #navbar ul li ul ul li ul li a:link, #navbar ul li ul ul li ul li a:visited {
-        color: #ff0000;
-        font-size: 80%;
-        }
-        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Brews &amp; Bonds</title>
 </head>
 <body>
-<main>
-    <header>
-            <div id="navbar">
-            <ul>
-                <li><a href="#">birds</a></li>
-                <li><a href="#">mammals</a>
-                <ul>
-                    <li><a href="#">humans</a></li>
-                    <li><a href="#">cats</a>
-                        <ul>
-                            <li><a href="#">big</a></li>
-                             <li><a href="#">domestic</a>
-                                    <ul>
-                                        <li><a href="#">tabby</a></li>
-                                        <li><a href="#">ginger</a></li>
-                                        <li><a href="#">siamese</a></li>
-                                        <li><a href="#">persian</a></li>
-                                        <li><a href="#">grey</a></li>                      
-                                    </ul>                      
-                            </li>                     
-                            <li><a href="#">stray</a></li>                  
-                        </ul>                
-                    </li>                   
-                    <li><a href="#">dogs</a></li>             
-                </ul>
-                </li>      
-                <li><a href="#">fish</a></li>             
-                <li><a href="#">reptiles</a></li>            
-                <li><a href="#">insects</a></li>              
-                <li><a href="#">arachnids</a></li>            
-            </ul>       
-            </div>    
+<main class="container">
+  <header class="equal-columns">
+    <div id="logo"><a class="brewsbonds" href="index.html">Brews &amp; Bonds</a></div>
+    <nav class="topnav" id="myTopnav">
+    <ul>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="visit-us.html">Visit Us</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
 
-    </header>
+    <!--HAMBURGER -->
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <!--HAMBURGER END -->
+    </ul>
+    </nav>     
+  </header>
 
+  <!-- HERO -->
+  <div id="hero">
+    <div id="hero-message">
+    <h1>WELCOME!</h1>
+      <p>We are a cozy space where both coffee and community can meet: the perfect place for you and your friends to bond and hang </p>
+      <p>Come &amp; Visit Us for a 
+        memorable coffee experience.</p>
+    </div>
+    <img class="heroimage" src="photos/brewsandbonds.jpg" alt="Brews and Bonds" >
+  </div>
 
-</main> 
-</body>
+  <!-- TODAY'S EVENTS -->
+  <div id="todays-events">
+    <h2>TODAYS EVENTS:</h2>
+
+      <!--Sunday-->     
+      <div id="day0">
+      <div class="equal-columns">
+          <img class="eventimage" src="#" alt="/" />
+        <div>
+          <h3>Book Club</h3> <p>Starts at 3PM, Ends at 4:30PM</p>
+          <h3>Brunch</h3> <p>Starts at 10AM, Ends at 2PM</p>
+        </div>
+      </div>
+      </div>
+
+      <!--Monday-->     
+      <div id="day1">
+      <div class="equal-columns">
+         <img class="eventimage" src="photos/monday-yoga.jpg" alt="People doing yoga on monday" />
+        <div> 
+          <h3>Morning Yoga Class</h3> <p>Starts at 9AM, Ends at 10AM</p>
+          <h3>Live Acoustic Music</h3> <p>Starts at 9AM, Ends at 10AM</p>
+        </div>
+      </div>
+      </div>
+
+      <!--Tuesday-->     
+      <div id="day2">
+      <div class="equal-columns">
+            <img class="eventimage" src="#" alt="/" />
+          <div>
+            <h3>Coffee Tasting</h3> <p>Starts at 6PM, Ends at 7:30PM</p>
+            <h3>Open Mic Night</h3> <p>Starts at 8PM, Ends at 10PM</p>
+          </div>
+        </div>
+        </div>
+      <!--Wednesday-->
+      <div id="day3">
+      <div class="equal-columns">
+            <img class="eventimage" src="#" alt="/" />
+          <div>
+            <h3>Art Exhibition</h3> <p>All Day</p>
+            <h3>Trivia Night</h3> <p>Starts at 7PM, Ends at 9PM</p>
+          </div>
+        </div>
+        </div>
+      
+        <!--Thursday-->
+        <div id="day4">
+          <div class="equal-columns">
+                <img class="eventimage" src="#" alt="/" />
+              <div>
+                <h3>Cooking Class</h3> <p>Starts at 5PM, Ends at 7PM</p>
+                <h3>Board Game</h3> <p>Starts at 6PM, Ends at 9PM</p>
+              </div>
+            </div>
+            </div>
+
+        <!--Friday-->
+        <div id="day5">
+          <div class="equal-columns">
+              <img class="eventimage" src="#" alt="/" />
+            <div>
+              <h3>Live Jazz Band</h3> <p>Starts at 7:30PM, Ends at 9:30PM</p>
+            </div>
+          </div>
+          </div>
+
+        <!--Saturday-->
+        <div id="day4">
+          <div class="equal-columns">
+              <img class="eventimage" src="#" alt="/" />
+            <div>
+            <h3>Family Day</h3> <p>Starts at 10AM, Ends at 12PM</p>
+            <h3>Poetry Slam</h3> <p>Starts at 7PM, Ends at 9PM</p>
+          </div>
+        </div>
+        </div>
+</div>
+
+  <!-- FEATURES -->
+      <div class="card-holder equal-columns">
+        <div class="card">
+          <img class="cardpicture" src="photos/iced-coffee.jpg" alt="picture of iced coffee" style="width:100%">
+          <div class="cardcontainer">
+            <h4><b>Menu</b></h4> 
+            <p>We have a vairety of drinks and food here! Go ahead and take a look at what we have to offer.</p> 
+            <a class="greenbutton" href="menu.html"> View Drinks </a> 
+          </div>
+        </div>
+        <div class="card">
+          <img class="cardpicture" src="photos/monday-acoustic.jpg" alt="girl with guitar at event" style="width:100%">
+          <div class="cardcontainer">
+            <h4><b>Events</b></h4> 
+            <p>We offer a variety of events for you to get in on the fun and bond with others! </p> 
+            <a class="greenbutton" href="visit-us.html"> Visit Us </a> 
+          </div>
+        </div>
+        <div class="card">
+          <img class="cardpicture" src="photos/emily-jacob-2.jpg" alt="emily and jacob sitting together" style="width:100%">
+          <div class="cardcontainer">
+            <h4><b>Our Story</b></h4> 
+            <p>Learn more about the story of how we came to be, and about our founders Jacob and Emily</p>
+            <a class="greenbutton" href="our-story.html"> Learn More </a> 
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
