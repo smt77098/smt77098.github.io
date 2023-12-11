@@ -76,7 +76,8 @@ header {
   padding: 2px 20px;
 }
 
-#logo.a { color:#f2f2f2}
+a.brewsandbonds {color:#fff}
+a#logo {color:#f2f2f2}
 .cardpicture {border-radius: 50%; max-width: 500px;}
 
 /* HOMEPAGE CARDS END*/
@@ -143,7 +144,7 @@ font-size: 20px;}
 #day5,
 #day6 {
   padding: 20px;
-  border: 4px double black;
+  
   display: none;
 }
 
@@ -155,7 +156,7 @@ font-size: 20px;}
   border-radius: 18px;
   padding:10px;
   text-decoration: none;
-  margin:5px; font-size:2vw;
+  margin:5px; font-size:18px;
   display:block; text-align: center;
 }
 a:hover.greenbutton {
@@ -266,8 +267,8 @@ a:hover.greenbutton {
 
 .eventcenter {font-size:18px; text-align: center;}
 .eventdetail {
+  background-color: #CCDCCD;
 
-  background-color: #eee;
 
   padding: 16px;
   margin: 16px 0
