@@ -62,7 +62,7 @@ body {
 }
 /* */
 
-
+.brewslogo {width:35px;}
 header {
   background-color: #59994E;
   padding: var(--base-padding);
