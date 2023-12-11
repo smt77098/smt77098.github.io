@@ -76,8 +76,14 @@ header {
   padding: 2px 20px;
 }
 
-a.brewsandbonds {color:#fff}
-a#logo {color:#f2f2f2}
+
+a:hover.brewsbonds {color:#a8ffad}
+.brewsbonds {text-decoration: none; color:white;}
+
+
+a:link.email {color:#205C23}
+a:hover.email {color:#43c74a}
+
 .cardpicture {border-radius: 50%; max-width: 500px;}
 
 /* HOMEPAGE CARDS END*/
