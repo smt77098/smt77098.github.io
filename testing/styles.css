@@ -67,6 +67,8 @@ header {
   background-color: #59994E;
   padding: var(--base-padding);
 }
+
+header.equal-columns {margin-bottom: 0;}
 /*HOMEPAGE CARDS */
 .card {
   width: 100%;
