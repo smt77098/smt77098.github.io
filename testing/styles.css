@@ -324,7 +324,6 @@ a:hover.greenbutton {
   .equal-columns { display: block; max-width: 100%; }
   .storyparagraph { font-size:3vw;}
 
-  .equal-columns.visitpage { display: flex; width:100%; flex-direction: column-reverse;}
 
 
  #hero { display: flex; width:100%; flex-direction: column-reverse;}
